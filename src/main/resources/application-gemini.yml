@@ -1,0 +1,11 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.model.ollama.autoconfigure.OllamaChatAutoConfiguration
+  ai:
+    google:
+      genai:
+        api-key: ${GOOGLE_AI_API_KEY}
+        chat:
+          options:
+            model: gemini-3.1-flash-lite
